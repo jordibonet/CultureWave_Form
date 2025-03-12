@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace CultureWave_Form.Forms
 {
-    public partial class FormX: Form
+    public partial class FormSpace: Form
     {
-        public FormX()
+        FormData formData;
+        public FormSpace(FormData formData)
         {
             InitializeComponent();
+            this.formData = formData;
         }
     }
 }

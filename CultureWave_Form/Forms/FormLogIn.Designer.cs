@@ -1,6 +1,6 @@
 ﻿namespace CultureWave_Form
 {
-    partial class FormLogIn
+    partial class FormLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -117,22 +117,23 @@
             buttonLogIn.FlatAppearance.BorderSize = 0;
             buttonLogIn.FlatStyle = FlatStyle.Flat;
             buttonLogIn.Font = new Font("Nunito Medium", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonLogIn.Location = new Point(569, 555);
+            buttonLogIn.Location = new Point(572, 559);
             buttonLogIn.Name = "buttonLogIn";
-            buttonLogIn.Size = new Size(135, 49);
+            buttonLogIn.Size = new Size(140, 60);
             buttonLogIn.TabIndex = 5;
             buttonLogIn.Text = "Iniciar Sesión";
             buttonLogIn.UseVisualStyleBackColor = false;
+            buttonLogIn.Click += buttonLogIn_Click;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(548, 32);
+            pictureBox1.Location = new Point(544, 32);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(192, 192);
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
             // 
-            // FormLogIn
+            // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -145,7 +146,7 @@
             Controls.Add(roundedTextBoxPassword);
             Controls.Add(roundedTextBoxUser);
             Controls.Add(labelCultureWave);
-            Name = "FormLogIn";
+            Name = "FormLogin";
             Text = "LogIn";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
