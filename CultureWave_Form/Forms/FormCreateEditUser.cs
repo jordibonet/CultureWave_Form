@@ -10,19 +10,16 @@ using System.Windows.Forms;
 
 namespace CultureWave_Form.Forms
 {
-    public partial class FormUser : Form
+    public partial class FormCreateEditUser : Form
     {
-        FormData formData;
-        public FormUser(FormData formData)
+        public FormCreateEditUser()
         {
             InitializeComponent();
-            this.formData = formData;
         }
 
-        private void buttonCreate_Click(object sender, EventArgs e)
+        private void buttonCancelar_Click(object sender, EventArgs e)
         {
-            FormCreateEditUser formCreateEditUser = new FormCreateEditUser();
-            formCreateEditUser.ShowDialog();
+            this.Close();
         }
     }
 }

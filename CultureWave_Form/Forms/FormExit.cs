@@ -10,13 +10,18 @@ using System.Windows.Forms;
 
 namespace CultureWave_Form.Forms
 {
-    public partial class FormExit: Form
+    public partial class FormExit : Form
     {
         FormData formData;
         public FormExit(FormData formData)
         {
             InitializeComponent();
             this.formData = formData;
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            formData.Close();
         }
     }
 }
