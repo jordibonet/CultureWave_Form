@@ -28,56 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonDelete = new Button();
-            buttonCreate = new Button();
-            buttonEdit = new Button();
             dataGridViewUsers = new DataGridView();
             labelNameUsers = new Label();
+            roundedButtonDelete = new CultureWave_Form.Controls.RoundedButton();
+            roundedButtonCreate = new CultureWave_Form.Controls.RoundedButton();
+            roundedButtonEdit = new CultureWave_Form.Controls.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).BeginInit();
             SuspendLayout();
-            // 
-            // buttonDelete
-            // 
-            buttonDelete.BackColor = Color.FromArgb(228, 179, 99);
-            buttonDelete.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonDelete.FlatAppearance.BorderSize = 0;
-            buttonDelete.FlatStyle = FlatStyle.Flat;
-            buttonDelete.Font = new Font("Nunito Medium", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonDelete.Location = new Point(613, 22);
-            buttonDelete.Name = "buttonDelete";
-            buttonDelete.Size = new Size(126, 50);
-            buttonDelete.TabIndex = 24;
-            buttonDelete.Text = "Eliminar";
-            buttonDelete.UseVisualStyleBackColor = false;
-            // 
-            // buttonCreate
-            // 
-            buttonCreate.BackColor = Color.FromArgb(228, 179, 99);
-            buttonCreate.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonCreate.FlatAppearance.BorderSize = 0;
-            buttonCreate.FlatStyle = FlatStyle.Flat;
-            buttonCreate.Font = new Font("Nunito Medium", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonCreate.Location = new Point(442, 22);
-            buttonCreate.Name = "buttonCreate";
-            buttonCreate.Size = new Size(126, 50);
-            buttonCreate.TabIndex = 23;
-            buttonCreate.Text = "Crear";
-            buttonCreate.UseVisualStyleBackColor = false;
-            buttonCreate.Click += buttonCreate_Click;
-            // 
-            // buttonEdit
-            // 
-            buttonEdit.BackColor = Color.FromArgb(228, 179, 99);
-            buttonEdit.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonEdit.FlatAppearance.BorderSize = 0;
-            buttonEdit.FlatStyle = FlatStyle.Flat;
-            buttonEdit.Font = new Font("Nunito Medium", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonEdit.Location = new Point(274, 22);
-            buttonEdit.Name = "buttonEdit";
-            buttonEdit.Size = new Size(126, 50);
-            buttonEdit.TabIndex = 25;
-            buttonEdit.Text = "Editar";
-            buttonEdit.UseVisualStyleBackColor = false;
             // 
             // dataGridViewUsers
             // 
@@ -98,17 +55,60 @@
             labelNameUsers.TabIndex = 26;
             labelNameUsers.Text = "Usuarios";
             // 
+            // roundedButtonDelete
+            // 
+            roundedButtonDelete.BackColor = Color.FromArgb(228, 179, 99);
+            roundedButtonDelete.FlatAppearance.BorderSize = 0;
+            roundedButtonDelete.FlatStyle = FlatStyle.Flat;
+            roundedButtonDelete.Font = new Font("Nunito Medium", 10F);
+            roundedButtonDelete.ForeColor = Color.Black;
+            roundedButtonDelete.Location = new Point(624, 19);
+            roundedButtonDelete.Name = "roundedButtonDelete";
+            roundedButtonDelete.Size = new Size(126, 60);
+            roundedButtonDelete.TabIndex = 45;
+            roundedButtonDelete.Text = "Eliminar";
+            roundedButtonDelete.UseVisualStyleBackColor = false;
+            // 
+            // roundedButtonCreate
+            // 
+            roundedButtonCreate.BackColor = Color.FromArgb(228, 179, 99);
+            roundedButtonCreate.FlatAppearance.BorderSize = 0;
+            roundedButtonCreate.FlatStyle = FlatStyle.Flat;
+            roundedButtonCreate.Font = new Font("Nunito Medium", 10F);
+            roundedButtonCreate.ForeColor = Color.Black;
+            roundedButtonCreate.Location = new Point(442, 19);
+            roundedButtonCreate.Name = "roundedButtonCreate";
+            roundedButtonCreate.Size = new Size(126, 60);
+            roundedButtonCreate.TabIndex = 44;
+            roundedButtonCreate.Text = "Crear";
+            roundedButtonCreate.UseVisualStyleBackColor = false;
+            roundedButtonCreate.Click += roundedButtonCreate_Click;
+            // 
+            // roundedButtonEdit
+            // 
+            roundedButtonEdit.BackColor = Color.FromArgb(228, 179, 99);
+            roundedButtonEdit.FlatAppearance.BorderSize = 0;
+            roundedButtonEdit.FlatStyle = FlatStyle.Flat;
+            roundedButtonEdit.Font = new Font("Nunito Medium", 10F);
+            roundedButtonEdit.ForeColor = Color.Black;
+            roundedButtonEdit.Location = new Point(259, 19);
+            roundedButtonEdit.Name = "roundedButtonEdit";
+            roundedButtonEdit.Size = new Size(126, 60);
+            roundedButtonEdit.TabIndex = 43;
+            roundedButtonEdit.Text = "Modificar";
+            roundedButtonEdit.UseVisualStyleBackColor = false;
+            // 
             // FormUser
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1016, 565);
+            Controls.Add(roundedButtonDelete);
+            Controls.Add(roundedButtonCreate);
+            Controls.Add(roundedButtonEdit);
             Controls.Add(dataGridViewUsers);
             Controls.Add(labelNameUsers);
-            Controls.Add(buttonEdit);
-            Controls.Add(buttonDelete);
-            Controls.Add(buttonCreate);
             Name = "FormUser";
             Text = "FormUser";
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).EndInit();
@@ -117,11 +117,10 @@
         }
 
         #endregion
-
-        private Button buttonDelete;
-        private Button buttonCreate;
-        private Button buttonEdit;
         private DataGridView dataGridViewUsers;
         private Label labelNameUsers;
+        private Controls.RoundedButton roundedButtonDelete;
+        private Controls.RoundedButton roundedButtonCreate;
+        private Controls.RoundedButton roundedButtonEdit;
     }
 }

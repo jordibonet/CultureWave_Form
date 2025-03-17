@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CultureWave_Form.Forms
 {
-    public partial class FormReserve: Form
+    public partial class FormReserve : Form
     {
         FormData formData;
         public FormReserve(FormData formData)

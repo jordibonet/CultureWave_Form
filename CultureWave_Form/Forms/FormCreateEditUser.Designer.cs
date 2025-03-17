@@ -30,14 +30,14 @@
         {
             roundedTextBoxUser = new CultureWave_Form.Controls.RoundedTextBox();
             labelUser = new Label();
-            buttonAceptar = new Button();
             roundedTextBoxEmail = new CultureWave_Form.Controls.RoundedTextBox();
             labelEmail = new Label();
             roundedTextBoxRol = new CultureWave_Form.Controls.RoundedTextBox();
             labelRol = new Label();
             roundedTextBoxPassword = new CultureWave_Form.Controls.RoundedTextBox();
             labelPassword = new Label();
-            buttonCancelar = new Button();
+            roundedButtonAccept = new CultureWave_Form.Controls.RoundedButton();
+            roundedButtonCancel = new CultureWave_Form.Controls.RoundedButton();
             SuspendLayout();
             // 
             // roundedTextBoxUser
@@ -70,20 +70,6 @@
             labelUser.Size = new Size(79, 26);
             labelUser.TabIndex = 22;
             labelUser.Text = "Usuario";
-            // 
-            // buttonAceptar
-            // 
-            buttonAceptar.BackColor = Color.FromArgb(228, 179, 99);
-            buttonAceptar.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonAceptar.FlatAppearance.BorderSize = 0;
-            buttonAceptar.FlatStyle = FlatStyle.Flat;
-            buttonAceptar.Font = new Font("Nunito Medium", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonAceptar.Location = new Point(104, 429);
-            buttonAceptar.Name = "buttonAceptar";
-            buttonAceptar.Size = new Size(126, 50);
-            buttonAceptar.TabIndex = 27;
-            buttonAceptar.Text = "Aceptar";
-            buttonAceptar.UseVisualStyleBackColor = false;
             // 
             // roundedTextBoxEmail
             // 
@@ -178,20 +164,34 @@
             labelPassword.TabIndex = 28;
             labelPassword.Text = "Contraseña";
             // 
-            // buttonCancelar
+            // roundedButtonAccept
             // 
-            buttonCancelar.BackColor = Color.FromArgb(228, 179, 99);
-            buttonCancelar.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonCancelar.FlatAppearance.BorderSize = 0;
-            buttonCancelar.FlatStyle = FlatStyle.Flat;
-            buttonCancelar.Font = new Font("Nunito Medium", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonCancelar.Location = new Point(289, 429);
-            buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(126, 50);
-            buttonCancelar.TabIndex = 32;
-            buttonCancelar.Text = "Cancelar";
-            buttonCancelar.UseVisualStyleBackColor = false;
-            buttonCancelar.Click += buttonCancelar_Click;
+            roundedButtonAccept.BackColor = Color.FromArgb(228, 179, 99);
+            roundedButtonAccept.FlatAppearance.BorderSize = 0;
+            roundedButtonAccept.FlatStyle = FlatStyle.Flat;
+            roundedButtonAccept.Font = new Font("Nunito Medium", 10F);
+            roundedButtonAccept.ForeColor = Color.Black;
+            roundedButtonAccept.Location = new Point(103, 429);
+            roundedButtonAccept.Name = "roundedButtonAccept";
+            roundedButtonAccept.Size = new Size(126, 60);
+            roundedButtonAccept.TabIndex = 33;
+            roundedButtonAccept.Text = "Aceptar";
+            roundedButtonAccept.UseVisualStyleBackColor = false;
+            // 
+            // roundedButtonCancel
+            // 
+            roundedButtonCancel.BackColor = Color.FromArgb(228, 179, 99);
+            roundedButtonCancel.FlatAppearance.BorderSize = 0;
+            roundedButtonCancel.FlatStyle = FlatStyle.Flat;
+            roundedButtonCancel.Font = new Font("Nunito Medium", 10F);
+            roundedButtonCancel.ForeColor = Color.Black;
+            roundedButtonCancel.Location = new Point(290, 429);
+            roundedButtonCancel.Name = "roundedButtonCancel";
+            roundedButtonCancel.Size = new Size(126, 60);
+            roundedButtonCancel.TabIndex = 34;
+            roundedButtonCancel.Text = "Cancelar";
+            roundedButtonCancel.UseVisualStyleBackColor = false;
+            roundedButtonCancel.Click += roundedButtonCancel_Click;
             // 
             // FormCreateEditUser
             // 
@@ -200,12 +200,12 @@
             BackColor = Color.White;
             ClientSize = new Size(530, 542);
             ControlBox = false;
-            Controls.Add(buttonCancelar);
+            Controls.Add(roundedButtonCancel);
+            Controls.Add(roundedButtonAccept);
             Controls.Add(roundedTextBoxRol);
             Controls.Add(labelRol);
             Controls.Add(roundedTextBoxPassword);
             Controls.Add(labelPassword);
-            Controls.Add(buttonAceptar);
             Controls.Add(roundedTextBoxEmail);
             Controls.Add(labelEmail);
             Controls.Add(roundedTextBoxUser);
@@ -220,13 +220,13 @@
 
         private Controls.RoundedTextBox roundedTextBoxUser;
         private Label labelUser;
-        private Button buttonAceptar;
         private Controls.RoundedTextBox roundedTextBoxEmail;
         private Label labelEmail;
         private Controls.RoundedTextBox roundedTextBoxRol;
         private Label labelRol;
         private Controls.RoundedTextBox roundedTextBoxPassword;
         private Label labelPassword;
-        private Button buttonCancelar;
+        private Controls.RoundedButton roundedButtonAccept;
+        private Controls.RoundedButton roundedButtonCancel;
     }
 }

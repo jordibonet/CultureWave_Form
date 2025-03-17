@@ -19,7 +19,7 @@ namespace CultureWave_Form.Forms
             this.formData = formData;
         }
 
-        private void buttonExit_Click(object sender, EventArgs e)
+        private void roundedButtonExit_Click(object sender, EventArgs e)
         {
             formData.Close();
         }

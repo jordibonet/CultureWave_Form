@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonGenerateIA = new Button();
-            buttonCreateEvent = new Button();
             labelNameEvents = new Label();
             labelEventDate = new Label();
             labelDescription = new Label();
@@ -37,35 +35,9 @@
             roundedTextBoxUser = new CultureWave_Form.Controls.RoundedTextBox();
             roundedTextBoxDescription = new CultureWave_Form.Controls.RoundedTextBox();
             roundedTextBox1 = new CultureWave_Form.Controls.RoundedTextBox();
+            roundedButtonGenerateIA = new CultureWave_Form.Controls.RoundedButton();
+            roundedButtonCreateEvent = new CultureWave_Form.Controls.RoundedButton();
             SuspendLayout();
-            // 
-            // buttonGenerateIA
-            // 
-            buttonGenerateIA.BackColor = Color.FromArgb(228, 179, 99);
-            buttonGenerateIA.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonGenerateIA.FlatAppearance.BorderSize = 0;
-            buttonGenerateIA.FlatStyle = FlatStyle.Flat;
-            buttonGenerateIA.Font = new Font("Nunito Medium", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonGenerateIA.Location = new Point(284, 12);
-            buttonGenerateIA.Name = "buttonGenerateIA";
-            buttonGenerateIA.Size = new Size(126, 50);
-            buttonGenerateIA.TabIndex = 6;
-            buttonGenerateIA.Text = "Generar con IA";
-            buttonGenerateIA.UseVisualStyleBackColor = false;
-            // 
-            // buttonCreateEvent
-            // 
-            buttonCreateEvent.BackColor = Color.FromArgb(228, 179, 99);
-            buttonCreateEvent.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonCreateEvent.FlatAppearance.BorderSize = 0;
-            buttonCreateEvent.FlatStyle = FlatStyle.Flat;
-            buttonCreateEvent.Font = new Font("Nunito Medium", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonCreateEvent.Location = new Point(519, 12);
-            buttonCreateEvent.Name = "buttonCreateEvent";
-            buttonCreateEvent.Size = new Size(126, 50);
-            buttonCreateEvent.TabIndex = 7;
-            buttonCreateEvent.Text = "Crear evento";
-            buttonCreateEvent.UseVisualStyleBackColor = false;
             // 
             // labelNameEvents
             // 
@@ -181,12 +153,42 @@
             roundedTextBox1.Texts = "";
             roundedTextBox1.UnderlinedStyle = false;
             // 
+            // roundedButtonGenerateIA
+            // 
+            roundedButtonGenerateIA.BackColor = Color.FromArgb(228, 179, 99);
+            roundedButtonGenerateIA.FlatAppearance.BorderSize = 0;
+            roundedButtonGenerateIA.FlatStyle = FlatStyle.Flat;
+            roundedButtonGenerateIA.Font = new Font("Nunito Medium", 10F);
+            roundedButtonGenerateIA.ForeColor = Color.Black;
+            roundedButtonGenerateIA.Location = new Point(284, 7);
+            roundedButtonGenerateIA.Name = "roundedButtonGenerateIA";
+            roundedButtonGenerateIA.Size = new Size(126, 60);
+            roundedButtonGenerateIA.TabIndex = 34;
+            roundedButtonGenerateIA.Text = "Generar con IA";
+            roundedButtonGenerateIA.UseVisualStyleBackColor = false;
+            // 
+            // roundedButtonCreateEvent
+            // 
+            roundedButtonCreateEvent.BackColor = Color.FromArgb(228, 179, 99);
+            roundedButtonCreateEvent.FlatAppearance.BorderSize = 0;
+            roundedButtonCreateEvent.FlatStyle = FlatStyle.Flat;
+            roundedButtonCreateEvent.Font = new Font("Nunito Medium", 10F);
+            roundedButtonCreateEvent.ForeColor = Color.Black;
+            roundedButtonCreateEvent.Location = new Point(519, 7);
+            roundedButtonCreateEvent.Name = "roundedButtonCreateEvent";
+            roundedButtonCreateEvent.Size = new Size(126, 60);
+            roundedButtonCreateEvent.TabIndex = 35;
+            roundedButtonCreateEvent.Text = "Crear evento";
+            roundedButtonCreateEvent.UseVisualStyleBackColor = false;
+            // 
             // FormEvent
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1016, 565);
+            Controls.Add(roundedButtonCreateEvent);
+            Controls.Add(roundedButtonGenerateIA);
             Controls.Add(roundedTextBox1);
             Controls.Add(roundedTextBoxDescription);
             Controls.Add(roundedTextBoxUser);
@@ -194,8 +196,6 @@
             Controls.Add(labelDescription);
             Controls.Add(labelEventDate);
             Controls.Add(labelNameEvents);
-            Controls.Add(buttonCreateEvent);
-            Controls.Add(buttonGenerateIA);
             Name = "FormEvent";
             Text = "FormEvent";
             ResumeLayout(false);
@@ -206,8 +206,6 @@
 
         private Button button;
         private Button button1;
-        private Button buttonGenerateIA;
-        private Button buttonCreateEvent;
         private Label labelNameEvents;
         private Label labelEventDate;
         private Controls.RoundedTextBox roundedTextBox1;
@@ -216,5 +214,7 @@
         private Controls.RoundedTextBox roundedTextBoxUser;
         private Controls.RoundedTextBox roundedTextBoxDescription;
         private Controls.RoundedTextBox roundedTextBox2;
+        private Controls.RoundedButton roundedButtonGenerateIA;
+        private Controls.RoundedButton roundedButtonCreateEvent;
     }
 }

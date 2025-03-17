@@ -28,40 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonExit = new Button();
-            buttonLogOut = new Button();
             labeLExit = new Label();
             labelLogOut = new Label();
+            roundedButtonExit = new CultureWave_Form.Controls.RoundedButton();
+            roundedButtonLogOut = new CultureWave_Form.Controls.RoundedButton();
             SuspendLayout();
-            // 
-            // buttonExit
-            // 
-            buttonExit.BackColor = Color.FromArgb(228, 179, 99);
-            buttonExit.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonExit.FlatAppearance.BorderSize = 0;
-            buttonExit.FlatStyle = FlatStyle.Flat;
-            buttonExit.Font = new Font("Nunito Medium", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonExit.Location = new Point(413, 338);
-            buttonExit.Name = "buttonExit";
-            buttonExit.Size = new Size(126, 50);
-            buttonExit.TabIndex = 34;
-            buttonExit.Text = "Salir";
-            buttonExit.UseVisualStyleBackColor = false;
-            buttonExit.Click += buttonExit_Click;
-            // 
-            // buttonLogOut
-            // 
-            buttonLogOut.BackColor = Color.FromArgb(228, 179, 99);
-            buttonLogOut.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonLogOut.FlatAppearance.BorderSize = 0;
-            buttonLogOut.FlatStyle = FlatStyle.Flat;
-            buttonLogOut.Font = new Font("Nunito Medium", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonLogOut.Location = new Point(413, 170);
-            buttonLogOut.Name = "buttonLogOut";
-            buttonLogOut.Size = new Size(126, 50);
-            buttonLogOut.TabIndex = 33;
-            buttonLogOut.Text = "Cerrar Sesión";
-            buttonLogOut.UseVisualStyleBackColor = false;
             // 
             // labeLExit
             // 
@@ -83,16 +54,45 @@
             labelLogOut.TabIndex = 35;
             labelLogOut.Text = "Cerrar Sesión";
             // 
+            // roundedButtonExit
+            // 
+            roundedButtonExit.BackColor = Color.FromArgb(228, 179, 99);
+            roundedButtonExit.FlatAppearance.BorderSize = 0;
+            roundedButtonExit.FlatStyle = FlatStyle.Flat;
+            roundedButtonExit.Font = new Font("Nunito Medium", 10F);
+            roundedButtonExit.ForeColor = Color.Black;
+            roundedButtonExit.Location = new Point(413, 337);
+            roundedButtonExit.Name = "roundedButtonExit";
+            roundedButtonExit.Size = new Size(126, 60);
+            roundedButtonExit.TabIndex = 37;
+            roundedButtonExit.Text = "Salir";
+            roundedButtonExit.UseVisualStyleBackColor = false;
+            roundedButtonExit.Click += roundedButtonExit_Click;
+            // 
+            // roundedButtonLogOut
+            // 
+            roundedButtonLogOut.BackColor = Color.FromArgb(228, 179, 99);
+            roundedButtonLogOut.FlatAppearance.BorderSize = 0;
+            roundedButtonLogOut.FlatStyle = FlatStyle.Flat;
+            roundedButtonLogOut.Font = new Font("Nunito Medium", 10F);
+            roundedButtonLogOut.ForeColor = Color.Black;
+            roundedButtonLogOut.Location = new Point(413, 166);
+            roundedButtonLogOut.Name = "roundedButtonLogOut";
+            roundedButtonLogOut.Size = new Size(126, 60);
+            roundedButtonLogOut.TabIndex = 38;
+            roundedButtonLogOut.Text = "Cerrar Sesión";
+            roundedButtonLogOut.UseVisualStyleBackColor = false;
+            // 
             // FormExit
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1016, 565);
+            Controls.Add(roundedButtonLogOut);
+            Controls.Add(roundedButtonExit);
             Controls.Add(labeLExit);
             Controls.Add(labelLogOut);
-            Controls.Add(buttonExit);
-            Controls.Add(buttonLogOut);
             Name = "FormExit";
             Text = "FormExit";
             ResumeLayout(false);
@@ -100,10 +100,9 @@
         }
 
         #endregion
-
-        private Button buttonExit;
-        private Button buttonLogOut;
         private Label labeLExit;
         private Label labelLogOut;
+        private Controls.RoundedButton roundedButtonExit;
+        private Controls.RoundedButton roundedButtonLogOut;
     }
 }

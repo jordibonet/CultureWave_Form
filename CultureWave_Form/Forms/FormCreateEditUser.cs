@@ -17,7 +17,7 @@ namespace CultureWave_Form.Forms
             InitializeComponent();
         }
 
-        private void buttonCancelar_Click(object sender, EventArgs e)
+        private void roundedButtonCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }

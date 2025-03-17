@@ -32,8 +32,8 @@
             labelUser = new Label();
             dataGridViewSpaces = new DataGridView();
             roundedTextBoxUser = new CultureWave_Form.Controls.RoundedTextBox();
-            buttonDeleteReserve = new Button();
-            buttonReserve = new Button();
+            roundedButtonReserve = new CultureWave_Form.Controls.RoundedButton();
+            roundedButtonDeleteReserve = new CultureWave_Form.Controls.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSpaces).BeginInit();
             SuspendLayout();
             // 
@@ -87,33 +87,33 @@
             roundedTextBoxUser.Texts = "";
             roundedTextBoxUser.UnderlinedStyle = false;
             // 
-            // buttonDeleteReserve
+            // roundedButtonReserve
             // 
-            buttonDeleteReserve.BackColor = Color.FromArgb(228, 179, 99);
-            buttonDeleteReserve.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonDeleteReserve.FlatAppearance.BorderSize = 0;
-            buttonDeleteReserve.FlatStyle = FlatStyle.Flat;
-            buttonDeleteReserve.Font = new Font("Nunito Medium", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonDeleteReserve.Location = new Point(791, 39);
-            buttonDeleteReserve.Name = "buttonDeleteReserve";
-            buttonDeleteReserve.Size = new Size(126, 50);
-            buttonDeleteReserve.TabIndex = 22;
-            buttonDeleteReserve.Text = "Eliminar Reserva";
-            buttonDeleteReserve.UseVisualStyleBackColor = false;
+            roundedButtonReserve.BackColor = Color.FromArgb(228, 179, 99);
+            roundedButtonReserve.FlatAppearance.BorderSize = 0;
+            roundedButtonReserve.FlatStyle = FlatStyle.Flat;
+            roundedButtonReserve.Font = new Font("Nunito Medium", 10F);
+            roundedButtonReserve.ForeColor = Color.Black;
+            roundedButtonReserve.Location = new Point(555, 34);
+            roundedButtonReserve.Name = "roundedButtonReserve";
+            roundedButtonReserve.Size = new Size(126, 60);
+            roundedButtonReserve.TabIndex = 39;
+            roundedButtonReserve.Text = "Reservar";
+            roundedButtonReserve.UseVisualStyleBackColor = false;
             // 
-            // buttonReserve
+            // roundedButtonDeleteReserve
             // 
-            buttonReserve.BackColor = Color.FromArgb(228, 179, 99);
-            buttonReserve.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonReserve.FlatAppearance.BorderSize = 0;
-            buttonReserve.FlatStyle = FlatStyle.Flat;
-            buttonReserve.Font = new Font("Nunito Medium", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonReserve.Location = new Point(556, 39);
-            buttonReserve.Name = "buttonReserve";
-            buttonReserve.Size = new Size(126, 50);
-            buttonReserve.TabIndex = 21;
-            buttonReserve.Text = "Resevar";
-            buttonReserve.UseVisualStyleBackColor = false;
+            roundedButtonDeleteReserve.BackColor = Color.FromArgb(228, 179, 99);
+            roundedButtonDeleteReserve.FlatAppearance.BorderSize = 0;
+            roundedButtonDeleteReserve.FlatStyle = FlatStyle.Flat;
+            roundedButtonDeleteReserve.Font = new Font("Nunito Medium", 10F);
+            roundedButtonDeleteReserve.ForeColor = Color.Black;
+            roundedButtonDeleteReserve.Location = new Point(789, 35);
+            roundedButtonDeleteReserve.Name = "roundedButtonDeleteReserve";
+            roundedButtonDeleteReserve.Size = new Size(126, 60);
+            roundedButtonDeleteReserve.TabIndex = 40;
+            roundedButtonDeleteReserve.Text = "Eliminar Reserva";
+            roundedButtonDeleteReserve.UseVisualStyleBackColor = false;
             // 
             // FormReserve
             // 
@@ -121,8 +121,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1016, 565);
-            Controls.Add(buttonDeleteReserve);
-            Controls.Add(buttonReserve);
+            Controls.Add(roundedButtonDeleteReserve);
+            Controls.Add(roundedButtonReserve);
             Controls.Add(roundedTextBoxUser);
             Controls.Add(dataGridViewSpaces);
             Controls.Add(labelUser);
@@ -140,7 +140,7 @@
         private Label labelUser;
         private DataGridView dataGridViewSpaces;
         private Controls.RoundedTextBox roundedTextBoxUser;
-        private Button buttonDeleteReserve;
-        private Button buttonReserve;
+        private Controls.RoundedButton roundedButtonReserve;
+        private Controls.RoundedButton roundedButtonDeleteReserve;
     }
 }
